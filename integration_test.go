@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nuttingd/chartify/chartrepo"
 	"github.com/stretchr/testify/require"
-	"github.com/variantdev/chartify/chartrepo"
 )
 
 var helm string = "helm"
@@ -155,7 +155,7 @@ func TestIntegration(t *testing.T) {
 	})
 
 	// SAVE_SNAPSHOT=1 go1.17 test -run ^TestIntegration/local_chart_with_slash_at_the_end$ ./
-	// Related to https://github.com/variantdev/chartify/pull/13
+	// Related to https://github.com/nuttingd/chartify/pull/13
 	runTest(t, integrationTestCase{
 		description: "local chart with slash at the end",
 		release:     "myapp",
@@ -178,7 +178,7 @@ func TestIntegration(t *testing.T) {
 	})
 
 	// SAVE_SNAPSHOT=1 go1.17 test -run ^TestIntegration/local_chart_with_dot_at_the_end$ ./
-	// Related to https://github.com/variantdev/chartify/pull/13
+	// Related to https://github.com/nuttingd/chartify/pull/13
 	runTest(t, integrationTestCase{
 		description: "local chart with dot at the end",
 		release:     "myapp",
@@ -201,7 +201,7 @@ func TestIntegration(t *testing.T) {
 	})
 
 	// SAVE_SNAPSHOT=1 go1.17 test -run ^TestIntegration/local_chart_with_release_namespace$ ./
-	// Related to https://github.com/variantdev/chartify/pull/13
+	// Related to https://github.com/nuttingd/chartify/pull/13
 	runTest(t, integrationTestCase{
 		description: "local chart with release namespace",
 		release:     "myapp",
@@ -215,7 +215,7 @@ func TestIntegration(t *testing.T) {
 	})
 
 	// SAVE_SNAPSHOT=1 go1.17 test -run ^TestIntegration/local_chart_with_chart_name_unequal_to_dir_name$ ./
-	// Related to https://github.com/variantdev/chartify/pull/13#issuecomment-1077431214
+	// Related to https://github.com/nuttingd/chartify/pull/13#issuecomment-1077431214
 	runTest(t, integrationTestCase{
 		description: "local chart with chart name unequal to dir name",
 		release:     "myapp",

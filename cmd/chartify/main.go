@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/variantdev/chartify"
+	"github.com/nuttingd/chartify"
 )
 
 type stringSlice []string
